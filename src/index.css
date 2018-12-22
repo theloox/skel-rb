@@ -32,8 +32,18 @@ pre, code {
   background-color: #660033;
   border-color: #000000;
 }
-.btn-primary:hover {
-  background-color: #cc0066; }
+
+.btn-primary:focus, .btn-primary:hover {
+  background-color: #cc0066;
+}
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+  background-color: #cc0066;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
+  background-color: #cc0066;
+}
 
 .navbar {
   font-size: 14pt;

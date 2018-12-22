@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
-import {CSSTransition, TransitionGroup} from "react-transition-group"
+//import { CSSTransition, TransitionGroup } from "react-transition-group"
 import { Button,
   Fade,
   Jumbotron,
   Grid,
-  Col,
-  Row,
-  Well
+  Row
+  //Col
 } from "react-bootstrap";
-//import { BrowserRouter as Router } from "react-router-dom";
-//import Routes from "./Routes";
-//import './App.css';
-//import background from "../img/pexels-photo-258112.jpeg"
+
 
 
 const license = `MIT License
@@ -126,11 +122,11 @@ class About extends Component {
     Copyright (c) 2018 Axel Gonzalez
   </p>
   <p>
-    Este codigo se encuentra bajo licencia <strong>MIT</strong>
+    Este código se encuentra bajo licencia <strong>MIT</strong>
   </p>
   <hr />
   <p>
-    <Button bsSize="large" bsStyle="primary" href="https://github.com/theloox/mini-rb"><span className="fab fa-github-alt" /> github</Button>
+    <Button bsSize="large" bsStyle="primary" href="https://github.com/theloox/skel-rb" target="_blank"><span className="fab fa-github-alt" /> github</Button>
   </p>
 
 </Jumbotron>
@@ -179,9 +175,9 @@ class About extends Component {
       </div>
     <div className="blob trans">
 <ul>
-<a href="https://www.jpl.nasa.gov/spaceimages">JPL Space Images</a><br />
-<a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=pia17172">pia17172</a><br />
-<a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA02321">PIA02321</a><br />
+<a href="https://www.jpl.nasa.gov/spaceimages" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />JPL Space Images</a><br />
+<a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=pia17172" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />pia17172</a><br />
+<a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA02321" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />PIA02321</a><br />
 </ul>
 <pre>{jpl}</pre>
     </div>

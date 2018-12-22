@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
-import {CSSTransition, TransitionGroup} from "react-transition-group"
+//import {CSSTransition, TransitionGroup} from "react-transition-group"
 import { Button,
   Fade,
   Jumbotron,
   Grid,
-  Col,
-  Row
+  Row,
+  Col
 } from "react-bootstrap";
-//import { BrowserRouter as Router } from "react-router-dom";
-//import Routes from "./Routes";
-//import './App.css';
-//import background from "../img/pexels-photo-258112.jpeg"
 
 
 class Home extends Component {
@@ -59,20 +55,20 @@ Possimus eum fugit unde neque aut incidunt nisi velit. Laboriosam corrupti moles
   <Row className="mb-5 small row-cards">
     <Col xs={12} sm={4} md={4} className="card">
       <div className="card-body trans">
-        <h3 className="text-right"><a href="https://reactjs.org/" target="_blank"><span className="fas fa-external-link" />React</a></h3>
+        <h3 className="text-right"><a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />React</a></h3>
         <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
       </div>
     </Col>
     <Col xs={12} sm={4} md={4} className="card">
       <div className="card-body trans">
-        <h3 className="text-right"><a href="http://getbootstrap.com/" target="_blank"><span className="fas fa-external-link" />Bootstrap</a></h3>
+        <h3 className="text-right"><a href="http://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />Bootstrap</a></h3>
         <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.</p>
         <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
       </div>
     </Col>
     <Col xs={12} sm={4} md={4} className="card">
       <div className="card-body trans">
-        <h3 className="text-right"><a href="http://getbootstrap.com/" target="_blank"><span className="fas fa-external-link" />react-bootstrap</a></h3>
+        <h3 className="text-right"><a href="http://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />react-bootstrap</a></h3>
         <p>The most popular front-end framework, rebuilt for React.</p>
       </div>
     </Col>
