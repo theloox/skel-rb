@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
   //Footer,
-  MenuItem,
+  //MenuItem,
   Nav,
   Navbar,
-  NavDropdown,
+  //NavDropdown,
   NavItem,
   //NavLink
 } from "react-bootstrap";
