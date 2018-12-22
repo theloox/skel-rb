@@ -1,9 +1,9 @@
 {
-  "name": "test-rb",
+  "name": "skel-rb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap-css-only": "^3.3.7",
+    "bootstrap-css-only": "3.3.7",
     "font-awesome": "^4.7.0",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
