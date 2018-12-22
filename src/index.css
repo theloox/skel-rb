@@ -112,6 +112,11 @@ pre, code {
   }
 }
 
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: none;
+  }
+}
 
 .mr-auto,
 .mx-auto {
@@ -154,6 +159,7 @@ pre, code {
   //margin-right: 3.33%;
   //margin-left: 16px;
   //margin-right: 16px;
+  margin-bottom: 16px;
   padding-left: 0px;
   padding-right: 0px;
   float: left;
