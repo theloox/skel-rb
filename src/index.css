@@ -4,7 +4,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "FontAwesome", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -70,6 +70,11 @@ pre, code {
 
 .fade.in {
   opacity: 0.69;
+}
+
+.row-cards {
+  margin-right: -32px;
+  margin-left: -32px;
 }
 
 .col-4 {
@@ -147,18 +152,23 @@ pre, code {
   //border-width: 1px;
   //min-height: 400px;
   //margin-right: 3.33%;
-  padding-left: 0%;
+  //margin-left: 16px;
+  //margin-right: 16px;
+  padding-left: 0px;
   padding-right: 0px;
   float: left;
 }
 
 .cardbody {
   background-color: #d0d0d0;
-  border: 1px solid #707070;;
+  border: 1px solid #707070;
   border-radius: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
   min-height: 320px;
   padding: 8px;
   opacity: 0.69;
+  text-align: justify;
 }
 
 .xtitle {
@@ -187,6 +197,10 @@ pre, code {
   margin-bottom: 2.5em;
   margin-top: 0px;
   padding: 16px;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .trans {

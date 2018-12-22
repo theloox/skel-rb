@@ -30,14 +30,13 @@ class Home extends Component {
   render() {
       return (
 <div className="full">
+<Grid className="col-md-10 col-xs-offset-1">
+  <Row>
 <Fade in={this.state.pop} appear={false} timeout={500}>
-<div className="container">
-<div className="row">
-<Col className="col-10 mx-auto">
 <Jumbotron style={{textAlign: "center"}}>
     <h1>Esqueleto <span className="fab fa-snapchat-ghost"></span></h1>
   <p>
-    Esqueleto de un proyecto en <strong>react-bootsrap</strong>
+    Esqueleto de un proyecto en <strong>react-bootstrap</strong>
   </p>
   <p className="small" style={{textAlign: "justify"}}><small>
 Ullam ut error ipsam praesentium quos sint. Atque sunt dignissimos nisi. Hic qui ducimus quia dolor ut. Dolorum quisquam et vero ipsum repellat beatae reprehenderit. Quis veritatis et nihil at eligendi nemo eos. Qui nisi impedit doloremque voluptatem.
@@ -54,26 +53,31 @@ Possimus eum fugit unde neque aut incidunt nisi velit. Laboriosam corrupti moles
     <Button bsStyle="primary" href="/about">Acerca de</Button>
   </p>
 </Jumbotron>
-</Col>
-</div>
-</div>
 </Fade>
+  </Row>
 
-<Grid>
-  <Row className="">
-    <Col md={4} className="mb-5 card">
-      <div className="col-10 mx-auto cardbody">asd</div>
+  <Row className="mb-5 small row-cards">
+    <Col md={4} className="card">
+      <div className="cardbody">
+        <h3 className="text-right"><a href="https://reactjs.org/"><span className="fas fa-external-link" />React</a></h3>
+        <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+      </div>
     </Col>
-    <Col md={4} className="mb-5 card">
-      <div className="col-10 mx-auto cardbody">asd</div>
-  </Col>
-    <Col md={4} className="mb-5 card">
-      <div className="col-10 mx-auto cardbody">asd</div>
+    <Col md={4} className="card">
+      <div className="cardbody">
+        <h3 className="text-right"><a href="http://getbootstrap.com/"><span className="fas fa-external-link" />Bootstrap</a></h3>
+        <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.</p>
+        <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+      </div>
+    </Col>
+    <Col md={4} className="card">
+      <div className="cardbody">
+        <h3 className="text-right"><a href="http://getbootstrap.com/"><span className="fas fa-external-link" />react-bootstrap</a></h3>
+        <p>The most popular front-end framework, rebuilt for React.</p>
+      </div>
     </Col>
   </Row>
 </Grid>
-<Row>
-</Row>
 </div>
     );
   }
