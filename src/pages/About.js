@@ -198,6 +198,17 @@ class About extends Component {
 <pre>{jpl}</pre>
     </div>
   </Row>
+  <Row>
+    <div className="blob-head trans">
+      <h2>Logo -> B.U.G.-chan</h2>
+    </div>
+    <div className="blob trans">
+<ul>
+  <a href="https://www.deviantart.com/c-quel" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link" />c-quel @ deviantart</a><br />
+</ul>
+<pre>BSD License</pre>
+    </div>
+  </Row>
 </Grid>
 </div>
     );
