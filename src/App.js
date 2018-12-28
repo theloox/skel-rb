@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  //Footer,
   //MenuItem,
   Nav,
   Navbar,
@@ -12,6 +11,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 import './App.css';
+import logo from './img/logo.png';
 
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
 <Navbar collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="/"><span className="fas fa-moon-o"></span> Demo</a>
+      <a href="/"><img src={logo} height="32" width="32" style={{float: "left", "margin-top": -6, "margin-left": -12, "margin-right": 6}} />&nbsp;&nbsp;Esqueleto</a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
@@ -54,7 +54,7 @@ class App extends Component {
 </Navbar>
 <main>
             <Routes />
-          </main>
+</main>
     </div>
     </Router>
     );
