@@ -82,6 +82,11 @@ pre, code {
     color: #707070;
 }
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #660033;
+}
+
 
 /*                   _)     |
     _ \\ \ / -_)  _|_||  _` |  -_)
