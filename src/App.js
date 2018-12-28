@@ -23,7 +23,7 @@ class App extends Component {
 <Navbar collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="/"><img src={logo} height="32" width="32" style={{float: "left", "margin-top": -6, "margin-left": -12, "margin-right": 6}} />&nbsp;&nbsp;Esqueleto</a>
+      <a href="/"><img src={logo} alt="logo" title="Esqueletito" height="32" width="32" style={{float: "left", "margin-top": -6, "margin-left": -12, "margin-right": 6}} />&nbsp;&nbsp;Esqueletito</a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>

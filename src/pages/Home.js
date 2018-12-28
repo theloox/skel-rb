@@ -30,7 +30,7 @@ class Home extends Component {
   <Row>
 <Fade in={this.state.pop} appear={false} timeout={500}>
 <Jumbotron style={{textAlign: "center"}}>
-    <h1>Esqueleto <span className="fab fa-snapchat-ghost"></span></h1>
+    <h1>Esqueletito <span className="fab fa-snapchat-ghost"></span></h1>
   <p>
     Esqueleto de un proyecto en <strong>react-bootstrap</strong>
   </p>
