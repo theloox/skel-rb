@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import {
-  //MenuItem,
+  Collapse,
+  Glyphicon,
+  MenuItem,
   Nav,
   Navbar,
-  //NavDropdown,
+  NavDropdown,
   NavItem,
   //NavLink
 } from "react-bootstrap";
@@ -14,7 +16,64 @@ import './App.css';
 import logo from './img/logo.png';
 
 
+const popup = [
+  {
+    name: "Lorem",
+    path: "/lorem",
+    key: 4.1
+  },
+  {
+    name: "Ipsum",
+    path: "/ipsum",
+    key: 4.2
+  },
+  {
+    name: "Dolor",
+    path: "/dolor",
+    key: 4.3
+  },
+];
+
+
 class App extends Component {
+
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+        popup: true,
+    };
+
+    this.xx = this.xx.bind(this);
+  }
+
+  submenu(par) {
+    return(
+        par.arr.map((route, index) => (
+          <MenuItem href={route.path} eventKey={route.key}>{route.name}</MenuItem>
+        )
+      )
+    )
+  }
+
+  xx(par) {
+    return(
+      <>
+      <NavItem onClick={() => this.setState(par.ret)}>{par.name}<Glyphicon glyph={par.st ? "chevron-up" : "chevron-down"} style={{float: "right"}} /></NavItem>
+      <Collapse in={par.st}>
+      <Nav bsStyle="pills" stacked>
+      {
+        par.arr.map((route, index) => (
+          <LinkContainer to={route.path}>
+            <NavItem eventKey={route.key}>{route.name}</NavItem>
+          </LinkContainer>
+        ))
+      }
+      </Nav>
+      </Collapse>
+      </>
+    );
+  };
 
   render() {
     return (
@@ -44,14 +103,49 @@ class App extends Component {
           Ipsum
         </NavItem>
       </LinkContainer>
+
+      <NavDropdown eventKey={4} title="Popup" id="basic-nav-dropdown">
+        <this.submenu arr={popup} />
+      </NavDropdown>
+
       <LinkContainer to={'/about'}>
-        <NavItem eventKey={4}>
+        <NavItem eventKey={5}>
           Acerca de
         </NavItem>
       </LinkContainer>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+    <Nav bsStyle="pills" stacked>
+      <LinkContainer exact to={'/'}>
+        <NavItem eventKey={1}>
+          Página de inicio
+        </NavItem>
+      </LinkContainer>
+      <NavItem eventKey={0} />
+
+     <LinkContainer to={'/lorem'}>
+        <NavItem eventKey={2}>
+          Lorem
+        </NavItem>
+      </LinkContainer>
+
+      <LinkContainer to={'/ipsum'}>
+        <NavItem eventKey={3} disabled>
+          Ipsum
+        </NavItem>
+      </LinkContainer>
+
+      <this.xx name="Popup" arr={popup} st={this.state.popup} ret={{popup: !this.state.popup}} />
+      <NavItem eventKey={0} />
+
+      <LinkContainer to={'/about'}>
+        <NavItem eventKey={5}>
+          Acerca de
+        </NavItem>
+      </LinkContainer>
+    </Nav>
+
 <main>
             <Routes />
 </main>
