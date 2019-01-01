@@ -64,7 +64,7 @@ class App extends Component {
       <>
       <NavItem onClick={() => this.setState(par.ret)}>{par.name}<Glyphicon glyph={par.st ? "chevron-up" : "chevron-down"} style={{float: "right"}} /></NavItem>
       <Collapse in={par.st}>
-      <Nav bsStyle="pills" stacked>
+      <Nav bsStyle="pills" stacked className="nav-alt2">
       {
         par.arr.map((route, index) => (
           <LinkContainer to={route.path}>
@@ -123,13 +123,13 @@ class App extends Component {
 <Grid fluid>
   <Row>
   <Col xs={0} sm={2} md={2} ls={2}>
-    <Nav bsStyle="pills" stacked>
+    <Nav bsStyle="pills" stacked className="nav-alt">
       <LinkContainer exact to={'/'}>
         <NavItem eventKey={1}>
           Inicio
         </NavItem>
       </LinkContainer>
-      <NavItem eventKey={0} />
+      <NavItem eventKey={0}  className="nav-alt" />
 
      <LinkContainer to={'/lorem'}>
         <NavItem eventKey={2}>
@@ -144,7 +144,7 @@ class App extends Component {
       </LinkContainer>
 
       <this.xx name="Popup" arr={popup} st={this.state.popup} ret={{popup: !this.state.popup}} />
-      <NavItem eventKey={0} />
+      <NavItem eventKey={0} className="nav-null" />
 
       <LinkContainer to={'/about'}>
         <NavItem eventKey={5}>
