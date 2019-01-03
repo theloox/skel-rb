@@ -131,7 +131,7 @@ class App extends Component {
           Inicio
         </NavItem>
       </LinkContainer>
-      <NavItem eventKey={0}  className="nav-null" />
+      <NavItem eventKey={0} className="nav-null" />
 
      <LinkContainer to={'/lorem'}>
         <NavItem eventKey={2}>
